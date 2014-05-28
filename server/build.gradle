@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+mainClassName = "bootcamp.server.ServerMain"
+
+repositories {
+    maven { url 'http://maven.restlet.org' }
+}
+
+dependencies {
+    compile 'org.restlet.jee:org.restlet:2.2.1'
+    compile 'org.restlet.jee:org.restlet.ext.jackson:2.2.1'
+
+    compile project(':library')
+}
